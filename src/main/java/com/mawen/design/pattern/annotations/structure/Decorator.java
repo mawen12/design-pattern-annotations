@@ -12,27 +12,8 @@ import java.lang.annotation.Target;
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
+@Target(ElementType.CONSTRUCTOR)
 public @interface Decorator {
 
-	@Documented
-	@Retention(RetentionPolicy.RUNTIME)
-	@Target(ElementType.TYPE)
-	@interface Component {
-
-	}
-
-	@Documented
-	@Retention(RetentionPolicy.RUNTIME)
-	@Target(ElementType.TYPE)
-	@interface Base {
-
-	}
-
-	@Documented
-	@Retention(RetentionPolicy.RUNTIME)
-	@Target(ElementType.TYPE)
-	@interface Concrete {
-
-	}
+	Class<?> component();
 }

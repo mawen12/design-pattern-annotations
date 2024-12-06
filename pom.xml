@@ -7,6 +7,7 @@
     <groupId>com.mawen</groupId>
     <artifactId>design-pattern-annotations</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <name>Design Pattern Annotations</name>
 
